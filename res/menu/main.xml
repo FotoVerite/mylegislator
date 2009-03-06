@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/requery_legislators" 
+		android:title="@string/requery_legislator_label" 
+		android:alphabeticShortcut="@string/requery_legislator_shortcut"
+		android:icon="@android:drawable/ic_menu_send"/> 
+	<item android:id="@+id/reset" 
+		android:title="Reset My Legislators" 
+		android:alphabeticShortcut="@string/call_legislator_shortcut"
+		android:icon="@android:drawable/ic_menu_delete"/>
+</menu> 
+	

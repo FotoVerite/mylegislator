@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/mini_bio"  
+		android:title="Committees and Subcommittees"
+		/>
+	<item
+		android:id="@+id/terms"  
+		android:title="Terms Served"
+		/>
+	<item 
+		android:id="@+id/visit_website" 
+		android:title="Visit their Website"
+		/>
+	<item
+		 android:id="@+id/visit_webform_additional" 
+		android:title="Visit their Webform"
+		/>
+	<item 
+		android:id="@+id/visit_youtube_channel" 
+		android:title="@string/visit_youtube_channel_label" 
+		/>
+	<item android:id="@+id/add_to_twitter" 
+		android:title="@string/add_to_twitter_label" 
+		/>
+</menu>

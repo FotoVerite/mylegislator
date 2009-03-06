@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Legislators</string>
+    <!-- No Legislators Found on Main Itent --> 
+    <string name="empty_cursor">"For My Legislators to work correctly you must input a zipcode."
+    "Please press continue to open query window" </string>
+    
+    <!-- Welcome Intent Strings --> 
+    <string name="welcome_message">
+     My Congress Man strives to keep you up connected to your political representatives. \n\n
+     We do this is a multitude of ways\n
+     1. Vital information at your fingertips.\n
+     2. Strong API Ties\n
+     3. God do I need to write this better.</string>
+     
+     <string name="regular_message">
+     Please input your home zipcode to find your representative and senators.</string>
+     
+     <string name="enter_zip_button_text">Start Query</string>
+     
+    <!--Main Options-->  
+    <string name="requery_legislator_label">Requery</string>
+    <string name="requery_legislator_shortcut">r</string>
+    
+    <!--Legislator Main Options-->  
+    <string name="call_legislator_label">Call</string>
+    <string name="call_legislator_shortcut">c</string>
+    <string name="email_legislator_label">Email</string>
+    <string name="email_legislator_shortcut">e</string>
+    <string name="add_legislator_to_contacts_label">Add To Contacts</string>
+    <string name="add_legislator_to_contacts_shortcut">a</string>
+    <string name="add_to_twitter_label">Follow On Twitter</string>
+  	<string name="remove_legislator_to_contacts_label">Remove From Contacts</string>
+    <!--Legislator Additional Options-->  
+    <string name="additional_options">Additional Options</string>
+    <string name="add_to_twitter_shortcut">t</string>
+    <string name="visit_youtube_channel_label">Youtube</string>
+    <string name="visit_youtube_channel_shortcut">y</string>
+    
+    
+</resources>

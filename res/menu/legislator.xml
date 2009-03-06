@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"> 
+	<item android:id="@+id/call_legislator" 
+		android:title="@string/call_legislator_label" 
+		android:alphabeticShortcut="@string/call_legislator_shortcut"
+		android:icon="@android:drawable/ic_menu_call"/>
+	<item android:id="@+id/email_legislator" 
+		android:title="@string/email_legislator_label" 
+		android:alphabeticShortcut="@string/email_legislator_shortcut"
+		android:icon="@android:drawable/ic_menu_send"/>
+	<item
+		android:id="@+id/visit_webform_main" 
+		android:title="Visit their Webform"
+		android:icon="@android:drawable/ic_menu_send"
+		/>
+	<item android:id="@+id/add_legislator_to_contacts" 
+		android:title="@string/add_legislator_to_contacts_label" 
+		android:alphabeticShortcut="@string/add_legislator_to_contacts_shortcut"
+		android:icon="@android:drawable/ic_menu_add"/>
+</menu> 
+	
+
