@@ -90,12 +90,11 @@ public class MyLegislator extends Activity {
 		noLegislatorPanel =  (Panel)findViewById(R.id.no_legislators_panel);
 		InnerPanel innerPanel = (InnerPanel)findViewById(R.id.legislator_inner_panel);
 		innerPanel.setBackgroundColor(0XFF777777);
+		showCorrectPanel();    	
 		title.setText("Legislators for zipcode " + zipcode); 
 		if (Settings.getHasBeenOpened(this))  {
 			startInputZipActivity("Welcome to My Legislators", welcomeMessage);
 		}
-		else 
-			showCorrectPanel();    	
     }
     
     private void startInputZipActivity(String title, String message) {

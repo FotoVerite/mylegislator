@@ -19,7 +19,7 @@
 		android:id="@+id/visit_youtube_channel" 
 		android:title="@string/visit_youtube_channel_label" 
 		/>
-	<item android:id="@+id/add_to_twitter" 
-		android:title="@string/add_to_twitter_label" 
+	<item android:id="@+id/visit_twitter" 
+		android:title="Visit Their Twitter Account" 
 		/>
 </menu>

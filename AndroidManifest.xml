@@ -11,24 +11,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Welcome"
-       		  android:theme="@android:style/Theme.Dialog"
-       		  android:label="Input Your Zip">
+        <activity android:name="InputZipCode"
+       		  android:label="Input Your Zip"
+       		  android:theme="@android:style/Theme.NoTitleBar">
        		  <intent-filter>
        		    <category android:name="android.intent.category.DEFAULT"/> 
                 <action android:name="com.berg.mylegislator.INPUT_ZIP" />
               </intent-filter> 
     	</activity>
     	<activity android:name=".Legislator"
-       		  android:label="Welcome to My Congress Person"
        		  android:theme="@android:style/Theme.NoTitleBar"> 
     	</activity>
     	<activity android:name=".Term"
-       		  android:label="Welcome to My Congress Person"
        		  android:theme="@android:style/Theme.NoTitleBar"> 
     	</activity>
     	<activity android:name=".Committees"
-       		  android:label="Welcome to My Congress Person"
        		  android:theme="@android:style/Theme.NoTitleBar"> 
     	</activity>
     </application>

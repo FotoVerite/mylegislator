@@ -37,12 +37,12 @@ public class Legislator extends Activity {
 	 static final private int CALL = R.id.call_legislator;
 	 static final private int EMAIL  = R.id.email_legislator;
 	 static final private int WEBSITE  = R.id.visit_website;
+	 static final private int TWITTER  = R.id.visit_twitter;
 
 	 static final private int WEBFORM_MAIN  = R.id.visit_webform_main;
 	 static final private int WEBFORM_ADDITIONAL  = R.id.visit_webform_additional;
 
 	 static final private int ADD_TO_CONTACTS  = R.id.add_legislator_to_contacts;
-	 static final private int BEFRIEND  = R.id.add_to_twitter;
 	 static final private int YOUTUBE  = R.id.visit_youtube_channel;
 	 public static final int COMMITTEES = R.id.mini_bio;
 	 public static final int TERMS = R.id.terms;
@@ -291,7 +291,7 @@ public class Legislator extends Activity {
 			  					android.R.drawable.ic_menu_delete : android.R.drawable.ic_menu_add;	
 	  
 	  MenuItem addToContactsOption = menu.findItem(ADD_TO_CONTACTS);
-	  MenuItem twitterOption = menu.findItem(BEFRIEND);
+	  MenuItem twitterOption = menu.findItem(TWITTER);
 	  MenuItem youtubeOption = menu.findItem(YOUTUBE);
 	  MenuItem committeesOption = menu.findItem(COMMITTEES);
 	  MenuItem TermOption= menu.findItem(TERMS);
@@ -354,6 +354,9 @@ public class Legislator extends Activity {
     	    return true;
     	case (WEBSITE): 
     		startActivity( new Intent( Intent.ACTION_VIEW, Uri.parse(website)));
+    	    return true;
+    	case (TWITTER): 
+    		startActivity( new Intent( Intent.ACTION_VIEW, Uri.parse("http://www.twitter.com/"+ twitter)));
     	    return true;
     	case (COMMITTEES):
     		Intent committeeIntent=new Intent(this, Committees.class);
@@ -464,13 +467,8 @@ public class Legislator extends Activity {
 		  }
 	  else if (v == twitterRow) {
 		  	if (!(hasBefriended)) {
-				menu.setHeaderTitle("Follow on Twitter?");
-			  	menu.add(0, BEFRIEND, Menu.NONE, "Yes"); 
-			  	menu.add(0, NO, Menu.NONE, "No"); 
-		  	}
-		  	else {
-		  		menu.setHeaderTitle("Stop Following?");
-			  	menu.add(0, BEFRIEND, Menu.NONE, "Yes"); 
+				menu.setHeaderTitle("Visit Twitter?");
+			  	menu.add(0, TWITTER, Menu.NONE, "Yes"); 
 			  	menu.add(0, NO, Menu.NONE, "No"); 
 		  	}
 	  }
@@ -485,10 +483,19 @@ public class Legislator extends Activity {
 	    	return true; 
 	    }
 	    case (EMAIL): {
-		      return true; 
+	    	Intent msg=new Intent(Intent.ACTION_SEND);  
+	        String[] recipients={email};  
+	  
+	        msg.putExtra(Intent.EXTRA_EMAIL, recipients);  
+	        msg.putExtra(Intent.EXTRA_TEXT, "This is the email body");  
+	        msg.putExtra(Intent.EXTRA_SUBJECT, "This is the email subject");  
+	        msg.setType("image/*");  
+	        startActivity(Intent.createChooser(msg, "Choose application to send email"));  
+	    	return true; 
 	    }
-	    case (BEFRIEND): {
-	      return true; 
+	    case (TWITTER): {
+    		startActivity( new Intent( Intent.ACTION_VIEW, Uri.parse("http://www.twitter.com/"+ twitter)));
+	    	return true; 
 	    } 
 	  } 
 	  return false; 
