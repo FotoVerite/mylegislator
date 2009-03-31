@@ -135,10 +135,10 @@ public final class R {
         public static final int call_legislator_shortcut=0x7f060008;
         public static final int email_legislator_label=0x7f060009;
         public static final int email_legislator_shortcut=0x7f06000a;
+        public static final int enter_zip_button_text=0x7f060004;
         /**  No Legislators Found on Main Itent 
          */
-        public static final int empty_cursor=0x7f060001;
-        public static final int enter_zip_button_text=0x7f060004;
+        public static final int no_legislators_in_cursor=0x7f060001;
         public static final int regular_message=0x7f060003;
         public static final int remove_legislator_to_contacts_label=0x7f06000e;
         /** Main Options
@@ -147,7 +147,7 @@ public final class R {
         public static final int requery_legislator_shortcut=0x7f060006;
         public static final int visit_youtube_channel_label=0x7f060011;
         public static final int visit_youtube_channel_shortcut=0x7f060012;
-        /**  Welcome Intent Strings 
+        /**  Zip Input Intent Strings 
          */
         public static final int welcome_message=0x7f060002;
     }

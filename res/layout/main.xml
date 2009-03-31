@@ -17,11 +17,12 @@
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    android:text="Wait a Minute"
-	    android:textSize="20dip"
+	    android:drawablePadding="10dip"
+	    android:drawableLeft="@android:drawable/ic_dialog_alert"
+	    android:textSize="25dip"
 	    android:textColor="#FFFFFFFF"
-	    android:layout_marginTop="5dip"
-	    android:layout_marginLeft="15dip"
-	    
+		android:layout_marginLeft="15dip"
+	    android:layout_marginTop="10dip"	    
 	    />
 	 <ImageView
 	 	android:layout_width="fill_parent"
@@ -36,11 +37,13 @@
 	 <TextView  
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
-	    android:text="@string/empty_cursor"
-	    android:paddingTop="0dip"
+	    android:text="@string/no_legislators_in_cursor"
+	   	android:textSize="16dip"    
+	    android:paddingTop="5dip"
 	    android:paddingBottom="5dip"
 	   	android:paddingLeft="15dip"
 	   	android:paddingRight="15dip"
+	    android:lineSpacingExtra="2dip"
 	    />
 	    <com.berg.mylegislator.view.InnerPanel
 		    xmlns:android="http://schemas.android.com/apk/res/android"  

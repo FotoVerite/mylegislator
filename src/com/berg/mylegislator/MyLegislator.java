@@ -92,15 +92,19 @@ public class MyLegislator extends Activity {
 		innerPanel.setBackgroundColor(0XFF777777);
 		title.setText("Legislators for zipcode " + zipcode); 
 		if (Settings.getHasBeenOpened(this))  {
-			Intent i = new Intent(INPUT_ZIP);
-			Bundle inputZipExtras = new Bundle();
-			inputZipExtras.putString(MyLegislator.INPUT_SCREEN_TITLE, "Welcome to My Legislators");
-			inputZipExtras.putString(MyLegislator.INPUT_SCREEN_MESSAGE, welcomeMessage);
-			i.putExtras(inputZipExtras);
-			startActivity(i);
+			startInputZipActivity("Welcome to My Legislators", welcomeMessage);
 		}
 		else 
 			showCorrectPanel();    	
+    }
+    
+    private void startInputZipActivity(String title, String message) {
+    	Intent i = new Intent(INPUT_ZIP);
+		Bundle inputZipExtras = new Bundle();
+		inputZipExtras.putString(MyLegislator.INPUT_SCREEN_TITLE, title);
+		inputZipExtras.putString(MyLegislator.INPUT_SCREEN_MESSAGE, message);
+		i.putExtras(inputZipExtras);
+		startActivity(i);
     }
 
     @Override
@@ -137,12 +141,7 @@ public class MyLegislator extends Activity {
 			continueButton.setOnClickListener(new View.OnClickListener() { 
 		          public void onClick(View view) { 
 		        	noLegislatorPanel.setVisibility(View.GONE);
-		        	Intent i = new Intent(INPUT_ZIP);
-		    		Bundle inputZipExtras = new Bundle();
-		    		inputZipExtras.putString(MyLegislator.INPUT_SCREEN_TITLE, "Input your Zipcode");
-		    		inputZipExtras.putString(MyLegislator.INPUT_SCREEN_MESSAGE, regularMessage);
-		    		i.putExtras(inputZipExtras);
-		  			startActivity(i);
+					startInputZipActivity("Input your zipcode", regularMessage);
 		          } 
 		        });
 		}    
@@ -375,8 +374,7 @@ public class MyLegislator extends Activity {
  	private Runnable mStartZipInputIntent = new Runnable() {
 		   public void run() {
 			 //TODO actually make intent filters for all of these. 
-    	 	Intent welcomeIntent= new Intent(mContext, Welcome.class);
-    	 	startActivity(welcomeIntent);
+			startInputZipActivity("Input your zipcode", regularMessage);
 		   }
 		};
 		

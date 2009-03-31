@@ -18,8 +18,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
-import android.view.ViewParent;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -280,7 +278,7 @@ public class Legislator extends Activity {
 	  inflater.inflate(R.menu.legislator, menu);
 	  SubMenu subScience = menu.addSubMenu(
 			  R.string.additional_options);
-	  subScience.setIcon(R.drawable.icon);
+	  subScience.setIcon(android.R.drawable.ic_menu_more);
 	  inflater.inflate(R.menu.additional_options, subScience);
 	  return true; 
 	}

@@ -252,7 +252,7 @@ public class MyLegislatorDatabaseAdapter {
      */
     public Cursor fetchAllRepresenatives() {
         return mDb.query(DATABASE_TABLE_REPRESENTATIVES, represenativesFields,
-        		null, null, null, null, null);
+        		null, null, null, null, KEY_FIRST_NAME);
     }
     
     public Cursor fetchAllCommittes(long legislatorId) {

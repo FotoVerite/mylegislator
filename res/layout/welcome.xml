@@ -8,10 +8,13 @@
 		android:id="@+id/input_screen_message"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
+	    android:textSize="16dp"
 	    android:paddingTop="5pt"
 	   	android:paddingLeft="5pt"
 	   	android:paddingRight="5pt"
 	   	android:paddingBottom="0pt"
+	    android:lineSpacingExtra="4dip"
+	   	
 	    />
 	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
 		android:orientation="vertical"

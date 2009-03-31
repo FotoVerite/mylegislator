@@ -2,19 +2,22 @@
 <resources>
     <string name="app_name">My Legislators</string>
     <!-- No Legislators Found on Main Itent --> 
-    <string name="empty_cursor">"For My Legislators to work correctly you must input a zipcode."
+    <string name="no_legislators_in_cursor">"For My Legislators to work correctly you must input a zipcode."
     "Please press continue to open query window" </string>
     
-    <!-- Welcome Intent Strings --> 
+    <!-- Zip Input Intent Strings --> 
     <string name="welcome_message">
-     My Congress Man strives to keep you up connected to your political representatives. \n\n
-     We do this is a multitude of ways\n
-     1. Vital information at your fingertips.\n
-     2. Strong API Ties\n
-     3. God do I need to write this better.</string>
+     My Legislator strives give you easy access to your senators and representative.\n
+     \nThis including their offical website, phone number, email, and youtube channel. You can even synch your legislators directly to your address book.   
+     </string>
      
      <string name="regular_message">
-     Please input your home zipcode to find your representative and senators.</string>
+     Please input your home zipcode to find your representative and senators.\n
+     \nWe do this by working with the Sunlight Labs API 
+     http://services.sunlightlabs.com/api/ 
+     And GovTrack.us
+     http://www.govtrack.us/
+     </string>
      
      <string name="enter_zip_button_text">Start Query</string>
      
