@@ -70,7 +70,7 @@ public class Committees extends Activity {
 		legislatorsList.setChildDivider(divider);
 		legislatorsList.setAdapter(mAdapter);
         TextView mainTitle = (TextView)findViewById(R.id.main_title);
-        mainTitle.setText("Committees for " + fullName);
+        mainTitle.setText("Committees " + fullName.trim() + " serves in");
         thisPanel = (Panel)findViewById(R.id.term_panel);
         thisPanel.setBorderPaint(paneBorder);
         thisInnerPannel = (InnerPanel)findViewById(R.id.legislator_inner_panel);

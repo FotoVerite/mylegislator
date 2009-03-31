@@ -14,8 +14,8 @@
      <string name="regular_message">
      Please input your home zipcode to find your representative and senators.\n
      \nWe do this by working with the Sunlight Labs API 
-     http://services.sunlightlabs.com/api/ 
-     And GovTrack.us
+     \nhttp://services.sunlightlabs.com/api/ 
+     \nAnd GovTrack.us
      http://www.govtrack.us/
      </string>
      

@@ -190,7 +190,7 @@ public class Legislator extends Activity {
 		if (partyDesignation.equals("D"))
 			memberOf.append("Democratic ");
 		if (partyDesignation.equals("I"))
-			memberOf.append("Independant ");
+			memberOf.append("Independent ");
 		String district = legislatorCursor.getString(MyLegislatorDatabaseAdapter.DISTRICT_COLUMN);
 		if (district.length() < 5) {
 			StringBuffer bufferedString = new StringBuffer("district "); 
@@ -200,7 +200,7 @@ public class Legislator extends Activity {
 		}
 		else {
 			memberOf.append(district);
-			memberOf.append(" sentator");
+			memberOf.append(" senator");
 		}
 	}
 	
@@ -223,8 +223,8 @@ public class Legislator extends Activity {
 
 		}
 		if (partyDesignation.equals("I")) {
-			primaryPanelColor = myResources.getInteger(R.color.independant_panel);
-			graidentColor = myResources.getInteger(R.color.independant_gradient);
+			primaryPanelColor = myResources.getInteger(R.color.independent_panel);
+			graidentColor = myResources.getInteger(R.color.independent_gradient);
 			backgroundColors =  R.drawable.republican_list_selector_background;
 			dividerResource = android.R.drawable.divider_horizontal_dark;
 		}
@@ -323,15 +323,11 @@ public class Legislator extends Activity {
     		}
     	case (EMAIL):
 	    	Intent msg=new Intent(Intent.ACTION_SEND);  
-	        String[] recipients={"this.is@recipient.com"};  
-	        String[] carbonCopies={"hey.another@recipient.com"};  
+	        String[] recipients={email};  
 	  
 	        msg.putExtra(Intent.EXTRA_EMAIL, recipients);  
-	        msg.putExtra(Intent.EXTRA_CC, carbonCopies);  
-	        msg.putExtra(Intent.EXTRA_TEXT, "This is the email body");  
-	        msg.putExtra(Intent.EXTRA_SUBJECT, "This is the email subject");  
 	        msg.setType("image/*");  
-	        startActivity(Intent.createChooser(msg, "This is the chooser title"));  
+	        startActivity(Intent.createChooser(msg, "Choose you email application"));  
 	    	return true; 
     	case (ADD_TO_CONTACTS): {
     		if (hasAddedToContacts) {

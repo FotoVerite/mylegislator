@@ -13,8 +13,8 @@ public final class R {
     public static final class color {
         public static final int democratic_gradient=0x7f050007;
         public static final int democratic_panel=0x7f050006;
-        public static final int independant_gradient=0x7f050009;
-        public static final int independant_panel=0x7f050008;
+        public static final int independent_gradient=0x7f050009;
+        public static final int independent_panel=0x7f050008;
         public static final int republican_gradient=0x7f050005;
         public static final int republican_panel=0x7f050004;
         public static final int solid_blue=0x7f050001;

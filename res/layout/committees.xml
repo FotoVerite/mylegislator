@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	>
 <com.berg.mylegislator.view.Panel 
    	xmlns:android="http://schemas.android.com/apk/res/android"
   	android:id="@+id/term_panel"   	
@@ -6,8 +11,7 @@
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
     android:layout_gravity="center_vertical|center_horizontal"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp">
+    android:layout_margin="5dp">
     >
     <TextView 
       	android:id="@+id/main_title"  
@@ -39,3 +43,4 @@
 			  /> 
  </com.berg.mylegislator.view.InnerPanel>
 </com.berg.mylegislator.view.Panel>
+</LinearLayout>

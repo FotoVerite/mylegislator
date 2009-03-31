@@ -34,7 +34,7 @@
 	<color name="republican_gradient">#FFFF0000</color>
 	<color name="democratic_panel">#FF000099</color>
 	<color name="democratic_gradient">#FF3375FF</color>
-    <color name="independant_panel">#FFAAAAAA</color>
-    <color name="independant_gradient">#FFAAAAAA</color>
+    <color name="independent_panel">#FFAAAAAA</color>
+    <color name="independent_gradient">#FFAAAAAA</color>
     
 </resources>
